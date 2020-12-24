@@ -1,0 +1,119 @@
+body {
+  text-align: center;
+  background-color: #011f3f;
+}
+
+#level-title, #start-title {
+  font-family: "Press Start 2P", monospace;
+  font-size: 3rem;
+  margin: 5%;
+  color: #fef2bf;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.start-btn {
+  padding: 2% 5%;
+  color: #fef2bf;
+  background-color: #01172e;
+  font-size: 2rem;
+  border-radius: 30px;
+  display: none;
+  font-family: "Press Start 2P", monospace;
+} 
+.start-btn:focus {
+  outline: none;
+} 
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+@media screen and (max-width: 1150px) {
+  #level-title {
+    font-size: 2rem;
+    margin: 3%;
+    line-height: 2;
+  }
+  #start-title {
+    display: none;
+  }
+  .container {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .btn {
+    margin: 15px;
+    height: 150px;
+    width: 150px;
+    border: 8px solid black;
+  }
+  .pressed {
+    box-shadow: 0 0 10px white;
+  }
+  .start-btn {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #level-title {
+    font-size: 2rem;
+    line-height: 2;
+  }
+  .btn {
+    margin:  10px;
+    border: 8px solid black;
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #level-title {
+    font-size: 1.5rem;
+  }
+  .btn {
+    margin:  8px;
+    border: 5px solid black;
+    height: 100px;
+    width: 100px;
+  }
+  .pressed {
+    box-shadow: 0 0 8px white;
+  }
+}
